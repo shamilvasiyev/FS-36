@@ -1,0 +1,19 @@
+/* External css */
+
+h1 {
+  color: white;
+  background-color: teal;
+  text-align: center;
+}
+
+button {
+  background-color: yellow;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 15px;
+}
+
+img {
+  width: 250px;
+}
