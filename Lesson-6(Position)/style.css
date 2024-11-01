@@ -1,0 +1,118 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top-header {
+  padding: 10px 50px;
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-size: 12px;
+}
+
+.top-header h5 {
+  font-weight: lighter;
+}
+
+header {
+  padding: 15px 0;
+  background-color: teal;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-content a {
+  color: white;
+}
+
+.hero {
+  background-color: orange;
+  color: white;
+  position: relative;
+  /* padding: 70px 0; */
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.faq,
+.products {
+  height: 50vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq {
+  background-color: darkslategray;
+}
+
+.products {
+  background-color: chocolate;
+  height: 100vh;
+}
+
+.arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
