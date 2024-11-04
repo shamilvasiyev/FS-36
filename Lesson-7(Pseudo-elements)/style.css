@@ -1,0 +1,111 @@
+/* pseudo => yalanci */
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --sarimtiraq: purple;
+  --qirmizi: rgb(163, 57, 57);
+}
+
+header nav a::selection {
+  background-color: black;
+  color: red;
+}
+
+header nav a {
+  color: var(--qirmizi);
+  margin-right: 10px;
+  position: relative;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+header nav a:hover::after {
+  width: 100%;
+  background-color: red;
+}
+
+header nav a:visited {
+  color: var(--sarimtiraq);
+}
+
+header nav a:hover {
+  color: darkslategray;
+}
+
+header nav a:nth-child(3) {
+  color: red;
+}
+
+ul li {
+  color: var(--sarimtiraq);
+}
+
+ul li:nth-child(even) {
+  color: gray;
+}
+
+ul li:nth-child(odd) {
+  color: black;
+}
+
+/* ul li:nth-child(n + 5) {
+  color: red;
+} */
+
+h1 {
+  color: var(--sarimtiraq);
+}
+
+h1:hover {
+  color: teal;
+  background-color: black;
+}
+
+form {
+  margin: 50px;
+  padding: 15px;
+  border: 1px solid;
+}
+
+form button:active {
+  background-color: cadetblue;
+}
+
+ul li::after {
+  content: "#";
+  margin-left: 10px;
+}
+
+ul li::before {
+  content: "$";
+}
+
+input {
+  color: teal;
+}
+
+input::placeholder {
+  color: teal;
+}
+
+ul li::marker {
+  color: aqua;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: square;
+}
