@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <table>
+      <caption>
+        Students
+      </caption>
+
+      <thead>
+        <tr>
+          <th colspan="2">Fullname</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Eli</td>
+          <td>Eliyev</td>
+          <td>23</td>
+        </tr>
+
+        <tr>
+          <td>Ozgur</td>
+          <td>Rzazade</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <form>
+      <div class="form-top">
+        <label for="last-name">
+          <input id="name" type="text" placeholder="Enter your name" required />
+
+          <span>Name</span>
+        </label>
+
+        <label for="last-name">
+          <input
+            id="last-name"
+            type="text"
+            placeholder="Enter your last name"
+            minlength="5"
+            maxlength="10"
+            required
+          />
+
+          <span>Last</span>
+        </label>
+      </div>
+
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        value="test@test.com"
+        readonly
+      />
+
+      <input
+        type="number"
+        placeholder="Guest's count"
+        min="5"
+        max="10"
+        required
+        value="5"
+        disabled
+      />
+
+      <textarea rows="7" placeholder="Enter your message"></textarea>
+
+      <select>
+        <option>Baki</option>
+        <option>Sumqayit</option>
+        <option>Gence</option>
+        <option>Samaxi</option>
+        <option selected>Susa</option>
+      </select>
+
+      <label for="checkbox" class="checkbox-input">
+        <span>Receive new emails?</span>
+
+        <input type="checkbox" id="checkbox" checked />
+      </label>
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
