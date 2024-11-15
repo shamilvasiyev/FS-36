@@ -1,5 +1,18 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap"); */
+
+@font-face {
+  font-family: font-bold;
+  src: url("./assets/fonts/EduAUVICWANTPre-Bold.ttf");
+}
+
+@font-face {
+  font-family: font-medium;
+  src: url("./assets/fonts/EduAUVICWANTPre-Medium.ttf");
+}
+
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: font-medium;
 }
 
 * {
@@ -10,6 +23,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -64,7 +78,28 @@ nav {
   background-color: orange;
   color: white;
   position: relative;
-  /* padding: 70px 0; */
+}
+
+.social-media-icons {
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.social-media-icons a {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -72,6 +107,7 @@ nav {
   top: 50%;
   left: 50px;
   transform: translateY(-50%);
+  font-family: font-bold;
 }
 
 .box {
