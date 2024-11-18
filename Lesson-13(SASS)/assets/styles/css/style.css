@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  background-color: cadetblue;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav .container .nav-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .nav-content ul {
+  display: flex;
+  gap: 15px;
+}
+nav .container .nav-content ul li:hover {
+  background-color: #117554;
+}
+nav .container .nav-content ul li a {
+  color: #ffeb00;
+  font-size: 18px;
+}
+nav .container .nav-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #f2e5bf;
+  position: relative;
+}
+
+.circle-red {
+  left: 20%;
+  top: 150px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ee4e4e;
+}
+
+.circle-green {
+  left: 80%;
+  top: 70px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #117554;
+}
+
+.circle-teal {
+  left: 60%;
+  top: 70%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: cadetblue;
+}
+
+.register, .login {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid #f2e5bf;
+}
+
+.login {
+  background-color: #117554;
+  color: #f2e5bf;
+}
+
+.register {
+  background-color: #ee4e4e;
+  color: #f2e5bf;
+}/*# sourceMappingURL=style.css.map */
