@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                lg: "4rem",
+                xl: "5rem",
+                "2xl": "6rem",
+              },
+            },
+            colors: {
+              clifford: "#da373d",
+              yasil: "green",
+              gray: "#F7F7F7",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="py-[120px] bg-gray">
+      <div class="container">
+        <h3>Featured projects</h3>
+        <p>
+          Some of the latest and greatest projects from us here at
+          Wishbone+Partners.
+        </p>
+
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-[18px] mt-10">
+          <div
+            class="relative hover:cursor-pointer hover:shadow-2xl transition duration-500 group"
+          >
+            <img class="w-[100%]" src="./assets/images/project-1.png" alt="" />
+
+            <div
+              class="absolute top-10 left-10 opacity-0 group-hover:opacity-100 transition duration-500"
+            >
+              <p class="text-[#645C55] text-[14px]">New York</p>
+
+              <h5 class="text-[#403E3B] text-xl">Big Road Brewery</h5>
+            </div>
+
+            <button
+              class="py-3 px-5 rounded-[14px] bg-black text-white absolute left-11 bottom-10 opacity-0 group-hover:opacity-100 transition duration-1000 delay-200"
+            >
+              Read more
+            </button>
+          </div>
+
+          <div
+            class="relative hover:cursor-pointer hover:shadow-2xl transition duration-500 group"
+          >
+            <img class="w-[100%]" src="./assets/images/project-2.png" alt="" />
+
+            <div
+              class="absolute top-10 left-10 opacity-0 group-hover:opacity-100 transition duration-500"
+            >
+              <p class="text-[#645C55] text-[14px]">New York</p>
+
+              <h5 class="text-[#403E3B] text-xl">Big Road Brewery</h5>
+            </div>
+
+            <button
+              class="py-3 px-5 rounded-[14px] bg-black text-white absolute left-11 bottom-10 opacity-0 group-hover:opacity-100 transition duration-1000 delay-200"
+            >
+              Read more
+            </button>
+          </div>
+
+          <div
+            class="relative hover:cursor-pointer hover:shadow-2xl transition duration-500 group"
+          >
+            <img class="w-[100%]" src="./assets/images/project-3.png" alt="" />
+
+            <div
+              class="absolute top-10 left-10 opacity-0 group-hover:opacity-100 transition duration-500"
+            >
+              <p class="text-[#645C55] text-[14px]">New York</p>
+
+              <h5 class="text-[#403E3B] text-xl">Big Road Brewery</h5>
+            </div>
+
+            <button
+              class="py-3 px-5 rounded-[14px] bg-black text-white absolute left-11 bottom-10 opacity-0 group-hover:opacity-100 transition duration-1000 delay-200"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
